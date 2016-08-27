@@ -20,7 +20,6 @@ int main(void)
 {
     // get the users name and pull the first letter for the first initial
     
-    // printf("Enter your name: ");
     string name = GetString();
     
     
@@ -36,19 +35,19 @@ int main(void)
       
       // find the second initial
       
-      if (name[i] == ' ')
-      {
-      secondInitial = name[i + 1];
-      nameIndex = i + 1;
-      break;
-      }
+        if (name[i] == ' ')
+        {
+            secondInitial = name[i + 1];
+            nameIndex = i + 1;
+            break;
+        }
      }
     
     for (int i = nameIndex, s = strlen(name); i < s; i++)
     {
-         if (name[i] == ' ')
+        if (name[i] == ' ')
         {
-        lastInitial = name[i + 1];
+            lastInitial = name[i + 1];
         }
         
       
@@ -57,22 +56,22 @@ int main(void)
     // change results to upper case
     if (isalpha(firstInitial))
     {
-    firstInitial = toupper(firstInitial);
-    printf("%c", firstInitial);
+        firstInitial = toupper(firstInitial);
+        printf("%c", firstInitial);
     }
     if (isalpha(secondInitial))
     {
-    secondInitial = toupper(secondInitial);
-    printf("%c", secondInitial);
+        secondInitial = toupper(secondInitial);
+        printf("%c", secondInitial);
     }
     if (isalpha(lastInitial))
     {
-    lastInitial = toupper(lastInitial);
-    printf("%c\n", lastInitial);
+        lastInitial = toupper(lastInitial);
+        printf("%c\n", lastInitial);
     }
     else
     {
-    printf("\n");
+        printf("\n");
     }
   
     
